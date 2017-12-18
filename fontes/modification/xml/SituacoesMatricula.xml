@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<modification>
+  <name>SituacoesMatricula</name>
+  <id>SituacoesMatricula</id>
+  <ecidade-version>2.3.50</ecidade-version>
+  <file path='forms/db_frmmatricula.php'>
+    <operation>
+      <search regex="true" flag="U"><![CDATA[(if\s*\(atual\s*==\s*\"MATRICULADO\"\s*\)\s*\{((\n*.*)*)\);)]]></search>
+      <add>
+        <![CDATA[
+        
+ if (atual == "MATRICULADO") {
+    opcoes = new Array("EVADIDO|EVADIDO",
+                       "FALECIDO|FALECIDO",
+                        "MATRICULA INDEVIDA|MATRICULA INDEVIDA"
+                       );
+                               
+        ]]>
+      </add>
+    </operation>
+  </file>
+  
+</modification>

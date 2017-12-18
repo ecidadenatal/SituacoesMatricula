@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <plugin name="SituacoesMatricula" label="Situações da Matricula" plugin-version="1.0" ecidade-version="2.3.50" id-modulo="1100747">
+   <id id="SituacoesMatricula"> </id>
+   	<files>    
+	    <!-- outro -->
+	    <file name="SituacoesMatricula.xml"    path="/modification/xml/SituacoesMatricula.xml" />
+   	</files>
+  </plugin>
+</manifest>    
